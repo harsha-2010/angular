@@ -1,0 +1,11 @@
+<app-tip-section>
+    <p>Click the button more than 5 times</p>
+    <p>And then...</p>
+    <p>It will navigate here</p>
+    <button mat-raised-button> I understand</button>
+</app-tip-section>
+<app-congratulations-message [count]="count" [threshold]="threshold"></app-congratulations-message>
+<app-counter-button *ngIf="showCounterButton" [count]="count" (buttonClicked)="incrementCount()"></app-counter-button>
+<br>
+<button (click)="toggleCounterButton()" mat-raised-button color="primary">Show/Hide Counter Button</button>
+<br>

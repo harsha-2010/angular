@@ -1,0 +1,10 @@
+<div>
+    <h1>Params</h1>
+    <h3>URL Params</h3>
+    <p>urlParam = {{urlParam}}</p>
+    <p>anotherParam = {{anotherParam}}</p>
+    <h3>Query Params</h3>
+    <p *ngFor="let param of params">
+        {{param.name}}={{param.value}}
+    </p>
+</div>

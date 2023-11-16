@@ -1,0 +1,7 @@
+<h1 *ngIf="name; else noNameBlock">Hello {{name}}!</h1>
+<ng-template #noNameBlock>
+    <h1>You didn't pass any name</h1>
+</ng-template>
+<p *ngIf="age">Age: {{age}}</p>
+<p *ngIf="hairColor">Hair color: {{hairColor}}</p>
+<p></p>
